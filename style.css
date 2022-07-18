@@ -1,29 +1,47 @@
    
-div {  
-    box-sizing: border-box; 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{  
     width: 100%; 
-    border: 100px solid black; 
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
 } 
-   
-form {                                         
+.container, form>div{
+    display: flex;
+    align-items: center;
+} 
+form {      
+    padding: 30px 20px;
     margin: 0 auto; 
-    width: 600px;
+    width: 1000px;
     text-align: center;
     border: 1px Solid black;
-    background-color: aliceblue;
+    background-color:#d3d3d3;
+    font-size: large;
 }
-
-form>p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+form>div{
+justify-content: space-evenly;
+position: relative;
 }
 input{
     width: 300px;
-    margin-left: 2%;
-    float: inline-end;
+    padding: 10px;
 }
 .alert{
+    position: absolute;
     color: red;
+    font-size: 15px;
+    right: 0;
+}
+#submit{
+    width: 100px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border:  none;
 }
