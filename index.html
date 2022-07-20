@@ -8,36 +8,31 @@
   <body>
     <div class="container">
       <h2 style="text-align: center">FORM VALIDATION</h2>
-      <form
-        name="RegForm"
-        action="/"
-        onsubmit="return formValidate()"
-        method="post"
-      >
+      <form>
         <div>
           <p>Name:&emsp;&emsp;&emsp;&emsp;&ensp;</p>
-          <input type="text" name="Name" />
+          <input type="text" name="name" id="Name" />
           <label class="alert" id="name"></label>
         </div>
         <br />
 
         <div>
           <p>Address :&emsp;&emsp;&emsp;&ensp;</p>
-          <input type="text" name="Address" />
+          <input type="text" name="address" id="Add" />
           <label class="alert" id="address"></label>
         </div>
         <br />
 
         <div>
           <p>E-mail :&emsp;&emsp;&emsp;&emsp;&ensp;</p>
-          <input type="text" name="EMail" />
+          <input type="text" name="email" id="Email" />
           <label class="alert" id="email"></label>
         </div>
         <br />
 
         <div>
           <p>Password :&emsp;&emsp;&emsp;</p>
-          <input type="password" name="Password" />
+          <input type="password" name="pwd" id="Pwd" />
           <label class="alert" id="pwd"></label>
         </div>
         <br />
@@ -45,7 +40,7 @@
 
         <div>
           <p>Confirm Password :</p>
-          <input type="password" name="cPassword" />
+          <input type="password" name="cpwd" id="Cpwd" />
           <label class="alert" id="cpwd"></label>
         </div>
         <br />
@@ -53,16 +48,17 @@
 
         <div>
           <p>Phone : &emsp;&emsp;&emsp;&emsp;&emsp;</p>
-          <input type="number" name="phone" />
+          <input type="number" name="phone" id="Ph" />
           <label class="alert" id="phone"></label>
         </div>
         <br />
         <br />
-
-        <input id="submit" type="submit" value="Check" name="Submit" />
+        <button id="submit" type="button" onclick="formValidate()">
+          Submit
+        </button>
         <br />
       </form>
     </div>
-    <script src="app.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
